@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header class="header container">
+            <h1 class="header__city" id="city"></h1>
+            <div class="header__state" id="state"></div>
+            <div class="header__temp" id="temp"></div>
+        </header>
+        
+        <main class="weather container">
+            <ul class="weather__list">
+                <!-- WEATHER LIST ITEMS -->
+            </ul>
+        </main>
+
+        <div class="props container">
+            <div class="props__block">
+                <div class="props__element">
+                    <span class="props__title">ощущается как</span>
+                    <span class="props__value" id="feel"></span>
+                </div>
+                <div class="props__element">
+                    <span class="props__title">влажность</span>
+                    <span class="props__value" id="humidity"></span>
+                </div>
+            </div>
+            <div class="props__block">
+                <div class="props__element">
+                    <span class="props__title">давление</span>
+                    <span class="props__value" id="pressure"></span>
+                </div>
+                <div class="props__element">
+                    <span class="props__title">ветер</span>
+                    <span class="props__value" id="wind"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/bundle.js"></script>
+</body>
+
+</html>

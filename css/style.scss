@@ -1,0 +1,129 @@
+$small: 300px;
+$medium: 900px;
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 70vw;
+    margin: 0 auto;
+}
+
+.wrapper {
+    // height: 100vh;
+    background: rgb(4,34,48);
+    background: linear-gradient(180deg, rgba(4,34,48,1) 31%, rgba(72,99,113,1) 78%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 43px;
+    // height: 30vh;
+
+    &__city {
+        font-size: 4em;
+    }
+    &__state {
+        font-size: 1.5em;
+    }
+    &__temp {
+        font-size: 6em;
+    }
+}
+
+
+
+.weather {
+    display: flex;
+    justify-content: center;
+    
+
+    &__list {
+        // width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    }
+
+    &__item {
+        width: 68px;
+        height: 160px;
+        padding: 0px 20px;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    &__date {
+        font-size: 1.3em;
+    }
+
+    &__temp {
+       font-size: 1.9em;
+    }
+    &__icon {
+                
+        & svg {
+            width: 64px;
+            height: 64px;
+        }
+    }
+}
+
+.props {
+    display: flex;
+    padding-top: 45px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+    &__block {
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__element {
+        height: 88px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__title {
+        font-size: 1.3em;
+    }
+
+    &__value {
+        font-size: 1.9em;
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width: $medium) {
+    .weather {
+
+        &__list {
+            
+        }
+        &__item {
+            flex-wrap: wrap;
+        }
+    }
+}

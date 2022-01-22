@@ -1,4 +1,5 @@
-const url = 'https://api.openweathermap.org/data/2.5/weather?q=Kyiv&lang=ru&appid=74c8decd6d4dc54dcadd19431c0e7887';
+const appid = 'OPEN WEATHER API TOKEN';
+const url = `https://api.openweathermap.org/data/2.5/weather?q=Kyiv&lang=ru&appid=${appid}`;
 
 const config = {
     // For Header
